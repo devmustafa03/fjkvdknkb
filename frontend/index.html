@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      as="fetch"
+      href="/api/v1/wind/analysis?from=2026-01-02&to=2026-02-01&gate=09%3A50"
+      crossorigin
+    />
+    <title>WindSight · GB wind forecast monitor</title>
+    <meta
+      name="description"
+      content="Day-ahead wind forecast against metered generation for GB power buyers, from Elexon BMRS data."
+    />
+    <script src="/theme.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

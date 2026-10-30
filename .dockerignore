@@ -1,0 +1,5 @@
+# Repo root is the api context; send only what's copied
+*
+!requirements.txt
+!backend/app
+**/__pycache__
